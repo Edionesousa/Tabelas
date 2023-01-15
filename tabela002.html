@@ -22,6 +22,7 @@
                 width: 500px;
                 border-collapse: collapse;
                 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.514);
+                position: relative;
 
 
             }
@@ -35,15 +36,28 @@
             caption{
                 font: size 1.5em;
                 font-weight: bold;
-                color: white;
+                color:#008000;
+                font: bold;
                 box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.514);
                 padding: 10px;
                 background-color: #438f437c;
 
             }
-            thead,tfoot{
-                background-color: green;
+            thead, tfoot{
+                background-color: #008000;
                 color: white;
+            }
+            thead> tr> th{
+                position: sticky;
+                top: 0;
+                border: 1px solid black;
+                background-color:#008000 ;
+
+            }
+            table> caption{
+                position: sticky;
+                top: 0;
+                background-color:#438f437c;
             }
             td.num{
                 text-align: center;
