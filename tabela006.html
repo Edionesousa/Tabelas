@@ -7,21 +7,21 @@
     <title>Tabelas</title>
     <h1>Tabelas com nomes e filmes</h1>
 <style>
-    tbody{
+    body table{
+        font-family: Arial, Helvetica, sans-serif;
         background-color: chocolate;
+        border: solid 2px black;
         text-align: center;
         width: 400px;
     }
-    tbody td{
+    body table th{
+        border: solid 2px black;
+    }
+    body td{
         border: solid 2px black;
         width: auto;
     }
-    tbody tr{
-        background-color: chocolate;
-        width: auto;
-
-    }
-    tbody .thead{
+    body tr th{
         background-color: chocolate;
         width: auto;
 
@@ -31,6 +31,7 @@
 </head>
 <body>
     <tbody>
+
     <table>
         <thead>
             <tr>
@@ -43,7 +44,7 @@
         
         <tbody>
             <tr>
-                <td rowspan="3">MULHERES</td>
+                <th rowspan="3">MULHERES</th>
                 <td>Ana</td>
                 <td>Allen</td>
                 <td>Rambo</td>
@@ -63,7 +64,7 @@
                 <td>Big hero</td>
             </tr>
             <tr>
-                <td rowspan="3">HOMENS</td>
+                <th rowspan="3">HOMENS</th>
                 <td>Bruno</td>
                 <td>Intocaveis</td>
                 <td>Amnesia</td>
