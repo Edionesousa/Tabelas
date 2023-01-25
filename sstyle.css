@@ -20,7 +20,7 @@ table{
 table th{
     background-color: var(--cor1);
     color: var(--cor4);
-  
+  width: auto;
 }
 table td{
     background-color: var(--cor3);
