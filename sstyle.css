@@ -1,0 +1,27 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    --font-family: Arial, Helvetica, sans-serif;
+    --cor1:#34344e;
+    --cor2:#3a415a;
+    --cor3:#566981;
+    --cor4:#cbdad5;
+
+}
+table{
+    width: 500px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--cor4);
+    font: var(--font-family);
+
+}
+table th{
+    background-color: var(--cor1);
+    color: var(--cor4);
+  
+}
+table td{
+    background-color: var(--cor3);
+}
