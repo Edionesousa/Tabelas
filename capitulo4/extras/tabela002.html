@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <body>
+        <style>
+            :root{
+                padding: 0px;
+                margin: 0px;
+
+
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: auto;
+                min-width: 300px;
+                max-width: 500px;
+                box-shadow: 5px, 5px, 5px, 5px rgba(0, 0, 0, 0.199);
+
+              
+
+
+            }
+            tbody >tr:nth-child(2n){
+                background-color: #438f437c;
+            }
+            table{
+                width: 500px;
+                border-collapse: collapse;
+                position: relative;
+
+
+
+            }
+
+            td, th,tr{
+                border: 1px solid black;
+                padding: 10px;
+                box-shadow: 5px, 5px, 5px, 5px rgba(0, 0, 0, 0.507);
+
+
+            }
+            caption{
+                font: size 1.5em;
+                font-weight: bold;
+                color:#008000;
+                font: bold;
+                padding: 10px;
+                background-color: #438f437c;
+
+            }
+            thead, tfoot{ /*fixar cabeçalho da tabela*/
+                background-color: #008000;
+                top: -1px;
+                color: white;
+            }
+            thead> tr> th{
+                position: sticky;
+                top: 0;
+                border: 1px solid black;
+                background-color:#008000 ;
+
+            }
+            td.num{
+                text-align: center;
+
+            }
+        </style>
+           <h1>Uso de tabelas grandes</h1>
+        <!--
+            Anatomia para tabelas grandes
+            <CAPTION> Testo de legenda </CAPTION>
+        THEADER
+            TR, TD, TH...
+        TBODY
+            TR, TD, TH...
+        TFOOT
+            TR, TD, TH...
+        -->
+        <table>
+            <caption>Populaçao das Unidade Federativas</caption>
+            <thead>
+                <tr>
+                    <th class="col">Estado</th>
+                    <th class="col">Populaçao</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tfoot>
+                    <tr>
+                        <th class="row">Total de habitantes</th>
+                        <td class="num"><strong>239 948 500</strong></td>
+                    </tr>
+                </tfoot>
+    
+                <tr>
+                    <td>Sao Paulo</td>
+                    <td class="num">45 919 049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">19 597 330</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">15 989 929</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">14 016 906</td>
+                </tr>
+                <tr>
+                    <td>Parana</td>
+                    <td class="num">10 444 526</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do sul</td>
+                    <td class="num">10 693 929</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="num">8 796 448</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td class="num">8 452 381</td>
+                </tr>
+                <tr>
+                    <td>Para</td>
+                    <td class="num">7 581 051</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">6 248 436</td>
+                </tr>
+                <tr>
+                    <td>Goias</td>
+                    <td class="num">6 003 788</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num">6 574 789</td>
+                </tr>
+                <tr>
+                    <td>Espirito Santo</td>
+                    <td class="num">3 514 952</td>
+                </tr>
+                <tr>
+                    <td>Paraiba</td>
+                    <td class="num">3 766 528</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">3 483 985</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="num">3 035 122</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do norte</td>
+                    <td class="num">3 168 027</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td class="num">3 118 360</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td class="num">3 120 494</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="num">2,923,369</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do sul</td>
+                    <td class="num">2 449 024</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="num">2 068 017</td>
+                </tr>
+                <tr>
+                    <td>Rondonia</td>
+                    <td class="num">1 562 409</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="num">1 383 445</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="num">733 559	</td>
+                </tr>
+                <tr>
+                    <td>Amapa</td>
+                    <td class="num">669 526</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="num">450 479</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </body>
+</head>
+<body>
+    
+</body>
+</html>
